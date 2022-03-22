@@ -10,14 +10,14 @@ import sys
 # Firebase API
 # set temporaryly some api key to py
 config = {
-    "apiKey": "AIzaSyBym004axtB-2cyCO3a0_F1kDaGgaz0h_w",
-    "authDomain": "anomaly-detection-1bd55.firebaseapp.com",
-    "projectId": "anomaly-detection-1bd55",
-    "databaseURL":"https://anomaly-detection-1bd55-default-rtdb.firebaseio.com/",
-    "storageBucket": "anomaly-detection-1bd55.appspot.com",
-    "messagingSenderId": "164779489599",
-    "appId": "1:164779489599:web:503ca5bedb4beb5cb13b8a"
-};
+    "apiKey": "AIzaSyAmbZSRs7INBAYZZD93zlfxs3OEI9bM5Kw",
+    "authDomain": "anomaly-detection-db.firebaseapp.com",
+    "databaseURL": "https://anomaly-detection-db-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "projectId": "anomaly-detection-db",
+    "storageBucket": "anomaly-detection-db.appspot.com",
+    "messagingSenderId": "173477063235",
+    "appId": "1:173477063235:web:86a7d4423578b78394c2f6"
+}
 
 firebase = pyrebase.initialize_app(config)
 
