@@ -17,7 +17,7 @@
 
 <nav class="navbar navbar-dark text-light" style="background:#181818">
   <a class="navbar-brand" href="#">
-    <img src="{{ url_for('static',filename='img/poseidon-logo-small.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
+    <img src="{{ url_for('static',filename='img/ThreatLocke-logos_white.png') }}" width="30" height="30" class="d-inline-block align-top" alt="">
     Network Traffic Anomaly Detection
   </a>
 </nav>
@@ -294,7 +294,7 @@
               status_data = {
                 "header": "Connected",
                 "background": "bg-success",
-                "message": "Server is connected to IoT device. Please turn on monitoring mode."
+                "message": "Server is connected to monitoring device. Please turn on monitoring mode."
               };
               $("#monitoring").attr("disabled",false);
         }
@@ -302,7 +302,7 @@
               status_data = {
                 "header": "Connecting...",
                 "background": "bg-warning",
-                "message": "Server is connecting to IoT Device. This may take a few minutes"
+                "message": "Server is connecting to monitoring device. This may take a few minutes"
               };
              $("#monitoring").attr("disabled",true);
         }
@@ -310,7 +310,7 @@
               status_data = {
                 "header": "Connection Failed",
                 "background": "bg-danger",
-                "message": "Failed to connect to IoT Device. Check connection of IoT device"
+                "message": "Failed to connect to monitoring device. Check connection of IoT device"
               };
              $("#monitoring").attr("disabled",true);
         }
@@ -353,7 +353,7 @@
                      data = {
                         "header": "Normal Traffic",
                         "background": "bg-success",
-                        "message": "Theres no attack encountered so far, IOT devices network working..."
+                        "message": "Theres no attack encountered so far, devices network working..."
                      };
                     //$('#toast').toast('show')
                  }
@@ -361,21 +361,21 @@
                     data = {
                         "header": "Low Severity",
                         "background": "bg-primary",
-                        "message": "Theres abnormalities in network traffic, IOT devices network still working..."
+                        "message": "Theres abnormalities in network traffic, devices network still working..."
                      };
                  }
                  else if(severity[0] == "Moderate"){
                     data = {
                         "header": "Moderate Severity",
                         "background": "bg-warning",
-                        "message": "Traffic isn't normal, sending warning message to +63948116005."
+                        "message": "Traffic isn't normal, sending warning message to +639158635005."
                      };
                  }
                  else if(severity[0] == "High"){
                     data = {
                         "header": "High Severity",
                         "background": "bg-danger",
-                        "message": "System is under attacked, sending warning message to +63948116005."
+                        "message": "System is under attacked, sending warning message to +639158635005."
                      };
                  }
                  let toast_html = `
